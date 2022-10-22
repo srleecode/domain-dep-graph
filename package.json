@@ -1,0 +1,20 @@
+{
+  "name": "@srleecode/domain-dep-graph",
+  "version": "0.0.6",
+  "license": "MIT",
+  "description": "Plugin to extend nrwl nx dep-graph. It removes layer libraries and replaces them with the domains",
+  "entryPoint": "domain-dep-graph.js",
+  "scripts": {
+    "compile": "tsc --p ./tsconfig.json"
+  },
+  "private": false,
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@nrwl/devkit": "15.0.0",
+    "@types/node": "^18.11.3",
+    "nx": "^15.0.1",
+    "typescript": "4.8.4"
+  }
+}
