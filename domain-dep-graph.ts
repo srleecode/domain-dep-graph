@@ -42,7 +42,7 @@ const getDomainName = (node: ProjectGraphProjectNode<any>): string => {
   }
   const splitDirectory = node.data.root.split("/");
   const lastDirectoryPath: string = splitDirectory[splitDirectory.length - 1];
-  return node.name.replace(`-${lastDirectoryPath}`, "");
+  return node.name.replace(new RegExp(`-${lastDirectoryPath}$`), "");
 };
 
 const getLayerNameDomainNameMap = (
